@@ -93,3 +93,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
+      - name: Lighthouse Badger Easy
+        uses: ./.github/actions/lighthouse-badger-easy
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
